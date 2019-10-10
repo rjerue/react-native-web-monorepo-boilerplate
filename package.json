@@ -1,0 +1,35 @@
+{
+  "name": "RNW-Boilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "scripts": {
+    "tscs": "yarn workspace shared tsc",
+    "ios": "yarn workspace native ios",
+    "android": "yarn workspace native android",
+    "web": "yarn workspace web start",
+    "packager": "yarn workspace mobile start"
+  },
+  "devDependencies": {
+    "@types/react": "16.8.6",
+    "@types/react-native": "0.60.5",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "concurrently": "4.1.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-monorepo": "^0.2.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "prettier": "^1.18.2",
+    "typescript": "3.5.1"
+  }
+}

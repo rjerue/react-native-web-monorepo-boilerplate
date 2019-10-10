@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "isolatedModules": false,
+    "outDir": "dist",
+    "rootDir": ".",
+    "types": ["jest"]
+  },
+  "include": [
+    "*.ts",
+    "*.json",
+    "views",
+    "queries",
+    "utils",
+    "img",
+    "i18n",
+    "styles",
+    "utils",
+    "containers",
+    "../../types",
+  ]
+}
